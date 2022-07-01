@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title> Sr. Despojado</title>
+			<meta charset="utf-8" />
+			<meta name="author" content="Fernando Martinhago" />
+			<meta name="keywords" content="confortavel, roupa para o calor, roupas confortaveis, estilo despojado, moda chique e confortavel " />
+			<meta name="description" content="Roupas confortavéis que podem ser usadas em qualquer ocasião, modeladas com matériais leves e reciclados.">
+			<link rel="stylesheet" type="text/css" href="form-css.css"/>
+	</head>
+	<body>
+		<p align="right">
+		<nav>
+			<a class="a-menu" href="#"> Home </a>
+			<a class="a-menu" href="#pag-sobre"> Sobre </a>
+			<a class="a-menu" href="#pag-produtos"> Produtos </a>
+			<a class="a-menu" href="#pag-encomendas"> Encomendas </a>
+		</nav>		
+		</p>
+		<img src="img/banner.png" alt="Banner contendo a imagem e logo do site.">
+		
+        <article id="pag-sobre">
+		<h1> Sr. Despojado </h1>
+			<p>
+				Somos uma empresa brasileira que preza pelo conforto em primeiro lugar. Garantimos aos nosso clientes conforto e qualidade em nossas peças, mas não negligenciamos o desing. Nosso diferencial está na versatilidade de visuais que podem ser montados em diferentes locais e ocasiões. Linho, algodão e tricoline são alguns dos técidos que usamos, somente trabalhamos com os técidos mais confortavéis para nosso público. Experimente uma de nossas peças e nos dê seu feedback sobre como podemos melhorar tanto no desing quanto nos técidos, estamos sempre abertos a críticas construtivas para nosso trabalho.
+			</p>
+		</article>	
+			<section id="pag-produtos">
+					<h2> Produtos </h2>
+				<div id="container">
+					<div class="produtos">
+						<img src="img/camiseta.jpg">
+						<div class="nome">
+							<p>Camiseta de linho</p>
+							<p>     R$:119,90</p>
+						</div>
+					</div>	
+					<div class="produtos">
+						<img src="img/camiseta2.jpg">
+						<div class="nome">
+							<p>Camiseta de algodão</p>
+							<p>R$:99,90</p>
+						</div>
+					</div>	
+					<div class="produtos">
+						<img src="img/camiseta3.jpg">
+						<div class="nome">
+							<p>Camiseta de de tricoline</p>
+							<p>R$:89,90</p>
+						</div>
+					</div>	
+					<div class="produtos">
+						<img src="img/bermuda.jpg">
+						<div class="nome">
+							<p>Bermuda de linho</p>
+							<p>R$:79,90</p>
+						</div>
+					</div>	
+				</div>
+			</section>
+			<section id="pag-encomendas">
+					<h2> Encomendas </h2>
+				<p> Faça sua encomenda e receba nossas peças no local desejado. </p>
+				<form>
+					<label for="nome"> Quem reberaça o pacote:</label><br/>
+					<input id="nome" type="text" name="nome"  placeholder="Digite seu nome completo" required autofocus />
+					<label for="email">E-mail:</label><br/>
+					<input id="email" type="email" name="email" placeholder="nome@gmail.com" />
+					<br/><br/>
+
+					<label for="select">Produto:</label><br/>
+				<select id="select" name="select">
+					<option value="selecione">Selecione</option>
+					<option value="cam.linho">Camiseta de linho</option>
+					<option value="cam.algodao">Camiseta de algodão</option>
+					<option value="cam.trico">Camiseta de tricoline</option>
+					<option value="berm.linho">Bermuda de linho</option>
+				</select>
+				    <label for="qnt"> Quantidade:</label>
+				    <input id="qnt" type="number" name="qnt"  min="1" max="20" step="1">
+					<fieldset>
+						<legend>Local de retirada:</legend>
+						<input id="delivery" type="radio" name="local" value="delivery" /><label for="delivery">Delivery</label><br/>
+						<input id="retirada.local" type="radio" name="local" value="retirada.local" /><label for="retirada.local">Retirar no local</label>
+					</fieldset>
+
+					<label for="comentario">Comentario:</label>
+					<textarea id="commentario" cols="55" rows="5"></textarea>
+
+					<div id="botoes">
+						<input type="submit" name="btn-enviar" value="CONFIRMAR" />
+						<input type="reset" name="btn-resetar" value="CANCELAR"  />
+					</div>
+
+				</form>
+			</section>	
+			<footer><p>Desenvolvido por <a href="http://instagram.com/fernando_martinhago" target="
+			_blank">Fernando Martinhago</a> - 2021</p>
+			</footer>
+	</body>
+</html>
